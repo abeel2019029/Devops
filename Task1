@@ -1,0 +1,35 @@
+#!/usr/bin/bash
+
+cd /
+pwd
+
+prefix=""
+read prefix
+
+cd ~
+
+touch "$prefix empty"
+
+mkdir "${prefix}_Task12019029"
+
+ls -tl / > ~/"${prefix}_Task12019029"/root_directory_details.txt
+
+cd "${prefix}_Task12019029"
+
+mv root_directory_details.txt Abeel2019029_emp.php
+
+cp Abeel2019029_emp.php /home/Abeel
+
+(
+cat <<- EOF
+php
+echo 'Hello : <your name>‘;
+echo 'php version: ' . phpversion();
+EOF
+) > Abeel2019029_emp.php
+
+cat Abeel2019029_emp.php
+
+grep -o "<<" ~/Devops/2019029_Task1.sh
+
+wc -l ~/Devops/2019029_Task1.sh

@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+#1
+tar -cvf 2019029compressed.tar Devops
+
+#2
+zip -r 2019029compressed.zip Devops 
+
+#3
+unzip 2019029compressed.zip
